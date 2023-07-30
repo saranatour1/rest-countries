@@ -45,3 +45,13 @@
       <input type="search" bind:value={searchValue} bind:this={inputValue}  on:input={filterCountries}   id="default-search" class=" drop-shadow-md  shadow-slate-300 dark:shadow-dark-mode-elements pr-24 max-[375px]:w-full   p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-md bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-dark-mode-elements dark:border-gray-600 dark:placeholder-white dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search for a country" required>
   </div>
 </form>
+
+
+<style>
+  @media (max-width: 600px){
+    input[type='search'] {
+      padding-right: 0;
+    }
+  }
+
+</style>

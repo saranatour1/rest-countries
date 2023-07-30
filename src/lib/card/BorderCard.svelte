@@ -11,9 +11,12 @@
   }
   getCountryName(item); 
 
+console.log(border)
 </script>
 
 
-<a href={`/${border[0].numericCode}`} class="font-primary border dark:border-gray-400 drop-shadow-md px-2 py-2 my-5 bg-light-mode-background  dark:text-white dark:bg-dark-mode-elements align-middle">  
+<a href={`/${border[0].numericCode}`} data-sveltekit-reload
+  class="font-primary border dark:border-gray-400 drop-shadow-md px-2 py-2 my-5 bg-light-mode-background  dark:text-white dark:bg-dark-mode-elements align-middle" data-sveltekit-preload-data>  
   {border[0].name}
+
 </a>

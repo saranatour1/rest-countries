@@ -21,12 +21,39 @@
 </script>
 <!-- Fix media Query at 375px, align items is not working -->
 
-<div class="w-screen flex items-center justify-between gap-10 my-5 px-8 mx-auto  sm:gap-0">
+<div class="lg:w-screen flex items-center justify-between gap-1 my-5  sm:gap-0 ">
   <SearchBar items={items} on:searchItems={handleSearch} />
   <Sort items={items} on:sortItems={handleSort} />
 </div>
 
 <style>
+
+@media (max-width: 600px){
+    div {
+      width: 95%;
+      /* margin: 0 auto; */
+    }
+  }
+
+  @media (max-width: 500px){
+    div {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 455px){
+    div {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  @media (max-width: 415px){
+    div {
+      width: 70%;
+      /* margin: 0 auto; */
+    }
+  }
     @media (max-width: 375px) {
     div {
       flex-direction: column;

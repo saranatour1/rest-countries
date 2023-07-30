@@ -38,7 +38,7 @@ body {
 	background-color: var(--light-mode-background);
 }
 
-*{
+*:not(header){
 	transition: all 0.3s ease-in-out;
 }
 
