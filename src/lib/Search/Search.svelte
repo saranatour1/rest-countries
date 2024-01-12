@@ -19,9 +19,9 @@
 	}
 
 </script>
-<!-- Fix media Query at 375px, align items is not working -->
 
-<div class="lg:w-screen flex items-center justify-between gap-1 my-5  sm:gap-0 ">
+
+<div class="w-11/12 flex items-center justify-between mx-auto gap-1 my-5 max-sm:flex-col max-sm:mt-3   max-sm:gap-0 ">
   <SearchBar items={items} on:searchItems={handleSearch} />
   <Sort items={items} on:sortItems={handleSort} />
 </div>
@@ -31,7 +31,6 @@
 @media (max-width: 600px){
     div {
       width: 95%;
-      /* margin: 0 auto; */
     }
   }
 

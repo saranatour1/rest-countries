@@ -20,7 +20,7 @@
 	<meta name="description" content="Countries app" />
 </svelte:head>
 
-<section class="w-screen mx-5 h-full">
+<section class="w-screen mx-5 mt-3 h-full">
 	<Search items={items}  on:searchItems={handleSearch} on:sortItems={handleSort}/>
 	
 	{#if filteredBySearch.length >0}
